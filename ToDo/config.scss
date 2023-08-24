@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+}
+main{
+    background-color: #EEEEEE;
+    margin-right: 25%;
+    margin-left: 25%;
+    #tittle_ToDo {
+        text-align: center;
+    }
+    #inputToDo{
+        width: 100%;
+        height: 50px;
+        #textNewToDo{
+            width: 70%;
+            height: 35px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 3%;
+            padding-left: 15px;
+        }
+        #bttn_send{
+            width: 8%;
+            height: 35px;
+            border: 10px;
+            border-radius: 5px;
+        }
+        #bttn_send:hover{
+            background-color: #a8a8a8;
+        }
+        #bttn_clean{
+            width: 11%;
+            height: 35px;
+            border: 10px;
+            border-radius: 5px;
+            margin-right: 3%;
+        }
+        #bttn_clean:hover{
+            background-color: #a8a8a8;
+        }
+    }
+    #todoTask{
+        background-color: #EEEEEE;
+        width: 84.5%;
+        padding: 50px;
+    }
+}

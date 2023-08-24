@@ -1,0 +1,57 @@
+/*
+    CONSTANTS
+*/
+$color-font: #FFFFFF;
+$color-header: #34495E;
+$color-body: #212F3C;
+$font-family: 'Poppins', sans-serif;
+*{
+    padding: 0px;
+}
+main{
+    /* CSS GRID */
+    display: grid;
+    grid-template-rows: repeat(12, 50px);
+    grid-template-columns: repeat(8,1fr);
+    #game_snake{
+        /* CSS Design */
+        background-color: red;
+        /* CSS GRID ITEM*/
+        grid-row: 3/10;
+        grid-column: 3/7;
+        /* CSS GRID */
+        display: grid;
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(8,1fr);
+        #game_header{
+            /* CSS DESIGN */
+            color: $color_font;
+            background-color: $color-header;
+            font-family: $font-family;
+            text-align: center;
+            /* CSS GRID ITEM */
+            grid-row: 1/2;
+            grid-column: 1/9;
+            ul{
+                list-style: none;
+                margin-left: 30px;
+                li{
+                    display: inline-block;
+                    margin-right: 30%;
+                }
+            }
+        }
+        #game_body{
+            /* CSS DESIGN */
+            color: $color_font;
+            background-color: $color-body;
+            /* CSS GRID ITEM */
+            grid-row: 2/13;
+            grid-column: 1/9;
+            /* CSS GRID */
+            display: grid;
+            grid-template-rows: repeat(30, 1fr);
+            grid-template-columns: repeat(30,1fr);
+        }
+    }
+}

@@ -1,0 +1,461 @@
+/*
+    DEFINE: Variable
+*/
+$margin-left: 10%;
+$border-radius-search: 15px;
+
+/*
+    DEFINE: PAGE SECTIONS
+*/
+*{
+    padding: 0%;
+    border: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(images/ny_wallpaper_2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background-color: #283747;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    #nav_first{
+        width: 40%;
+        height: 80%;
+        position: absolute;
+        margin-left: $margin-left;
+        img{
+            position: absolute;
+            width: 100px;
+        }
+        h2{
+            position: relative;
+            margin-top: 30px;
+            margin-left: 23%;
+            color: white;
+        }
+    }
+    #nav_second{
+        width: 40%;
+        height: 80%;
+        position: relative;
+        margin-left: 50%;
+        padding-top: 20px;
+        ul{
+            position: relative;
+            list-style: none; 
+            margin-top: 10px;
+            padding: 5px;
+            padding-left: 15px;
+            background-color: rgba(216, 221, 219, 0.534);
+            border-radius: 10px;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                padding: 9px;
+                border-radius: 5px;
+            }
+            li:hover{
+                background-color: #B3B6B7;
+                color: black;
+            }
+        }
+    }
+}
+
+#div_main{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    padding-top: 30px;
+    #div_search{
+        position: relative;
+        height: 40px;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: $margin-left;
+        border-radius: $border-radius-search;
+        input{
+            //  Shape Configuration
+            height: 100%;
+            width: 88%;
+            padding-left: 20px;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            border-radius: $border-radius-search;
+            border-color: black;
+            //  Design
+            font-size: 20px;
+        }
+        button{
+            width: 8%;
+            height: 100%;
+            border-radius: $border-radius-search;
+            //  Design
+            font-size: 15px;
+            color: white;
+            background-color: #2471A3;
+            font-family: 'Nunito', sans-serif;
+        }
+        button:hover{
+            background-color: #154360;
+        }
+    }
+    #div_weather{
+        position: relative;
+        height: 400px;
+        width: 80%;
+        margin-top: 15px;
+        margin-left: $margin-left;
+        border-radius: 15px;
+        background-color: rgba(216, 221, 219, 0.8);
+        #weather_left{
+            width: 25%;
+            height: 87%;
+            padding-top: 5%;
+            background-color: white;
+            #daily_temp_img{
+                width: 60%;
+                height: 130px;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: red;
+            }
+            #daily_temp_date{
+                width: 60%;
+                height: 60px;
+                margin-top: 10px;
+                padding-top: 20px;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color: blue;
+                h1{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            #daily_weather{
+                width: 60%;
+                height: 60px;
+                margin-top: 10px;
+                padding-top: 20px;
+                margin-left: 20%;
+                margin-right: 20%;
+                background-color:yellow;
+            }
+        }
+    }
+}
+
+#div_news{
+    width: 100%;
+    height: 330px;
+    margin: 0;
+    padding-top: 50px;
+    position: relative;
+    background-color: #283747;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    #new_1{
+        width: 250px;
+        position: absolute;
+        padding: 5px;
+        margin-left: 80px;
+        background-color: #5D6D7E;
+        img{
+            width: 100%;
+        }
+    }
+    #new_1:hover{
+        background-color: #8693a1;
+        animation-name: newSect_1;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    #new_2{
+        position: absolute;
+        width: 250px;
+        padding: 5px;
+        margin-left: 370px;
+        background-color: #5D6D7E;
+        img{
+            width: 100%;
+        }
+    }
+    #new_2:hover{
+        background-color: #8693a1;
+        animation-name: newSect_2;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    #new_3{
+        position: absolute;
+        width: 250px;
+        padding: 5px;
+        margin-left: 660px;
+        background-color: #5D6D7E;
+        img{
+            width: 100%;
+        }
+    }
+    #new_3:hover{
+        background-color: #8693a1;
+        animation-name: newSect_3;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    #new_4{
+        position: relative;
+        width: 250px;
+        padding: 5px;
+        margin-left: 950px;
+        background-color: #5D6D7E;
+        img{
+            width: 100%;
+        }
+    }
+    #new_4:hover{
+        background-color: #8693a1;
+        animation-name: newSect_4;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+#div_recommendations{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: red;
+}
+footer{
+    position: relative;
+    margin-top: 400px;
+    width: 100%;
+    height: 180px;
+    background-color: #283747;
+    font-family: 'Nunito', sans-serif;
+    #footer_1{
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        background-color: yellow;
+    }
+    #footer_2{
+        position: absolute;
+        width: 33%;
+        height: 100%;
+        margin-left: 34%;
+        color: white;
+        h4{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        p{
+            margin-top: 10px;
+            margin-left: 40px;
+            margin-right: 30px;
+        }
+    }
+    #footer_3{
+        position: absolute;
+        width: 32%;
+        height: 100%;
+        margin-left: 68%;
+        color: white;
+        h4{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        p{
+            margin-top: 10px;
+            margin-left: 40px;
+            margin-right: 30px;
+        }
+        #email{
+            input{
+                margin-top: 15px;
+                margin-left: 40px;
+                width: 250px;
+                height: 30px;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+            button{
+
+            }
+        }
+    }
+}
+#end_page{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    background-color: #283747 ;
+    color: white;
+    p{
+        margin-left: 80%;
+    }
+}
+/*  ANIMATIONS  */
+
+//  NEWS SECTION
+@keyframes newSect_1 {
+    0%{
+        width: 250px;
+        position: absolute;
+        padding: 5px;
+        background-color: #8693a1;
+    }
+    25%{
+        width: 260px;
+        position: absolute;
+        padding: 4px;
+        background-color: #8693a1;
+    }
+    50%{
+        width: 265px;
+        position: absolute;
+        padding: 3px;
+        background-color: #8693a1;
+    }
+    75%{
+        width: 272.5px;
+        position: absolute;
+        padding:2px;
+        background-color: #8693a1;
+    }
+    100%{
+        width: 280px;
+        position: absolute;
+        padding:1px;
+        margin-left: 80px;
+        background-color: #8693a1;
+    }
+}
+@keyframes newSect_2 {
+    0%{
+        width: 250px;
+        position: absolute;
+        padding: 5px;
+        margin-left: 370px;
+        background-color: #8693a1;
+    }
+    25%{
+        width: 260px;
+        position: absolute;
+        padding: 4px;
+        margin-left: 370px;
+        background-color: #8693a1;
+    }
+    50%{
+        width: 265px;
+        position: absolute;
+        padding: 3px;
+        margin-left: 370px;
+        background-color: #8693a1;
+    }
+    75%{
+        width: 272.5px;
+        position: absolute;
+        padding:2px;
+        margin-left: 370px;
+        background-color: #8693a1;
+    }
+    100%{
+        width: 280px;
+        position: absolute;
+        padding:1px;
+        margin-left: 80px;
+        margin-left: 370px;
+        background-color: #8693a1;
+    }
+}
+@keyframes newSect_3 {
+    0%{
+        width: 250px;
+        position: absolute;
+        padding: 5px;
+        margin-left: 660px;
+        background-color: #8693a1;
+    }
+    25%{
+        width: 260px;
+        position: absolute;
+        padding: 4px;
+        margin-left: 655px;
+        background-color: #8693a1;
+    }
+    50%{
+        width: 265px;
+        position: absolute;
+        padding: 3px;
+        margin-left: 650px;
+        background-color: #8693a1;
+    }
+    75%{
+        width: 272.5px;
+        position: absolute;
+        padding:2px;
+        margin-left: 645px;
+        background-color: #8693a1;
+    }
+    100%{
+        width: 280px;
+        position: absolute;
+        padding:1px;
+        margin-left: 80px;
+        margin-left: 640px;
+        background-color: #8693a1;
+    }
+}
+@keyframes newSect_4 {
+    0%{
+        width: 250px;
+        position: absolute;
+        padding: 5px;
+        margin-left: 950px;
+        background-color: #8693a1;
+    }
+    25%{
+        width: 260px;
+        position: absolute;
+        padding: 4px;
+        margin-left: 945px;
+        background-color: #8693a1;
+    }
+    50%{
+        width: 265px;
+        position: absolute;
+        padding: 3px;
+        margin-left: 940px;
+        background-color: #8693a1;
+    }
+    75%{
+        width: 272.5px;
+        position: absolute;
+        padding:2px;
+        margin-left: 935px;
+        background-color: #8693a1;
+    }
+    100%{
+        width: 280px;
+        position: absolute;
+        padding:1px;
+        margin-left: 80px;
+        margin-left: 930px;
+        background-color: #8693a1;
+    }
+}

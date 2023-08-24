@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="./config.js"></script>
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="header-cal">
+                <div id="label-cal"><h3 id="operation"></h3></div>
+                <div id="conf-cal">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </diiv>
+            <div id="div_keyboard"><!-- Show the buttom -->
+                <table class="keyboard_sect">
+                    <!-- Cero row -->
+                    <tr>
+                        <td><button class="table-button" onclick="buttonClicked('C')">C</button></td>   <!-- First column-->
+                        <td><button class="table-button" onclick="buttonClicked('(')">(</button></td>
+                        <td><button class="table-button" onclick="buttonClicked(')')">)</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('+')">+</button></td>
+                    </tr>
+                    <!-- First row -->
+                    <tr>
+                        <td><button class="table-button" onclick="buttonClicked('7')">7</button></td>   <!-- First column-->
+                        <td><button class="table-button" onclick="buttonClicked('8')">8</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('9')">9</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('-')">-</button></td>
+                    </tr>
+                    <!-- Second row -->
+                    <tr>
+                        <td><button class="table-button" onclick="buttonClicked('4')">4</button></td>   <!-- Second column-->
+                        <td><button class="table-button" onclick="buttonClicked('5')">5</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('6')">6</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('*')">*</button></td>
+                    </tr>
+                    <!-- Third row -->
+                    <tr>
+                        <td><button class="table-button" onclick="buttonClicked('1')">1</button></td>   <!-- Third column-->
+                        <td><button class="table-button" onclick="buttonClicked('2')">2</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('3')">3</button></td>
+                        <td><button class="table-button" onclick="buttonClicked('/')">/</button></td>
+                    </tr>
+                    <!-- Fourt row -->
+                    <tr>
+                        <td><button class="table-button" onclick="buttonClicked('0')" value="0">0</button></td>   <!-- Fourt column-->
+                        <td><button class="table-button" onclick="buttonClicked('.')" value="dot">.</button></td>
+                        <td colspan="4"><button class="table-button" onclick="buttonClicked('=')">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
