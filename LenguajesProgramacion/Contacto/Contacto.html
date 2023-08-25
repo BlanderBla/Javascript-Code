@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Contacto.css">
+
+	<?php
+		include("Contacto.php");
+	?>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">	<!-- Fuente para el LOGO-->
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Poppins" rel="stylesheet">	<!-- Fuente para los botones "botones2"-->
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">		<!-- Fuente para h1 -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">	<!-- Fuente para h2--> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">		<!-- Fuente para h3--> 
+	<script type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<H1>LENGUAJES DE PROGRAMACIÓN</H1>
+		</div>
+		<div id="MenuEncabezado">
+			<ul>
+				<a href="../index.html"><li class="Boton">PRINCIPAL</li></a>
+				<a href="../Blog/Blog.html"><li class="Boton">BLOG</li></a>
+				<a href="../Acerca de nosotros/AboutUs.html"><li class="Boton">NOSOTROS</li></a>
+				<a href="../Contacto/Contacto.html"><li class="Boton">CONTACTO</li></a>
+				<a href="../cuestionario/cuestionario.html"><li class="Boton">CUESTIONARIO</li></a>
+			</ul>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+		    <a href="../Lenguajes de Programación/C.html"><li class="Boton2">C/C++</li></a>
+			<a href="../Lenguajes de Programación/Java.html"><li class="Boton2">JAVA</li></a>
+			<a href="../Lenguajes de Programación/PHP.html"><li class="Boton2">PHP</li></a>
+			<a href="../Lenguajes de Programación/Python.html"><li class="Boton2">PYTHON</li></a>
+			<a href="../Posgrados/posgradoc++.html"><li class="Boton2">POSGRADOS</li></a>
+			<a href="../FAQ/ejemploFAQ.html"><li class="Boton2">FAQ</li></a>
+		</ul>
+	</nav>
+
+	<section>
+		<div id="Formulario">	
+			<form method="post" action="Contacto.php">
+				<br>
+				<h1>DATOS DE CONTACTO</h1>
+				<br>
+				<label for="Nombre">Nombre: </label><br>
+				<input type="text" name="Nombre" class="Nombre" placeholder=" Ingrese su Nombre" size="70" required="true">
+				<br><br>
+				<label for="Correo">E-mail: </label><br>
+				<input type="e-mail" name="Correo" class="Correo" placeholder=" Ingrese su correo electrónico" size="70" required="true">
+				<br><br>
+				<label for="Asunto">Asunto: </label><br>
+				<input type="text" name="Asunto" class="Asunto" placeholder="Ingrese el asunto" size="70">
+				<br><br>
+				<label for="Comentario">Comentario: </label><br>
+				<textarea name="Comentario" class="Comentario" rows="10" cols="72" placeholder="Escriba su comentario" required="true"></textarea><br>
+				<input type="submit" name="Enviar" id="Enviar">
+			</form>
+		</div>	
+	</section>	
+	<footer>
+		<div id="UPSLP">
+			<br>
+			Calle Urbano Villalón 500, La Ladrillera, 78369 San Luis, S.L.P.<br><br>
+			"Ciencia, Tecnología y Cultura al Servicio del Ser Humano"
+		</div>
+		<div id="Datos">
+			<br>
+			Lenguajes de programación ©<br>
+			Proyecto de Programacion Web I<br>
+			Universidad Politecnica de San Luis Potosí
+		</div>
+	</footer>
+	
+</body>
+</html>

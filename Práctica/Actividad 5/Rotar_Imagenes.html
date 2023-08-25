@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rotar imagenes</title>
+	<script type="text/javascript">
+		function tiempo(){
+			var i=0;
+			setInterval(function(){girar(); }, 1000);
+
+			function girar(){
+				var texto;
+				var imagenes=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+				texto="<img src="+imagenes[i]+">";
+				document.getElementById("rotatorio").innerHTML = texto;
+				if(i>3){
+					i=0;
+				}else{
+					i++;
+				}
+			}
+
+		}
+	</script>
+	<style type="text/css">
+		img{
+			width: 500px;
+			height: 800px;
+			margin-left: 300px;
+		}
+	</style>
+</head>
+<body onload="tiempo()">
+	<h1 style="background-color: black; color: white;"><center>Rotacion de imagen</center></h1>
+	<p id="rotatorio"></p>
+	<img src="">
+</body>
+</html>

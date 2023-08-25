@@ -1,0 +1,15 @@
+*{
+	margin: 0 auto;
+}
+header{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	float: center;
+
+	background-color: lightblue;
+
+	line-height: 100px;
+	text-align: center;
+	font-size: 35px;
+}

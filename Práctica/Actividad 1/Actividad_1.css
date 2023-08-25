@@ -1,0 +1,26 @@
+h1{
+	text-align: center;
+	background-color: black;
+	color: #FFFFFF;
+
+}
+.primo{
+	background-color: green;
+	color: black;
+	width: 50px;
+	height: 40px;
+}
+.par{
+	background-color: blue;
+	color: white;
+	width: 50px;
+	height: 40px;
+}
+#Tabla{
+	position: absolute;
+	width: 30%;
+	height: 440px;
+	margin-left: 35%;
+	border-color: black;
+	text-align: center;
+}

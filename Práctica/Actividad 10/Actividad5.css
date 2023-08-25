@@ -1,0 +1,31 @@
+*{
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 60px;
+	text-align: center;
+}
+form{
+	position: absolute;
+	margin-left: 30px;
+	width: 600px;
+	height: 3050px;
+	padding: 30px;
+
+	background-color: rgba(56, 44, 44, 0.3);
+}
+
+input[type="button"]{
+
+	width: 300px;
+	height: 30px;
+
+}
+input[type="radio"]{
+	margin-left: 30px;
+}
+div#Resultado{
+	position: relative;
+	margin-left: 750px;
+}

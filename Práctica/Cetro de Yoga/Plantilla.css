@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+header {
+	position: relative;
+	width: 100%;
+	height: 65px;
+}
+#logo{
+	position: absolute;
+	width: 400px;
+	height: 65px;
+	margin-left: 50px; 
+	text-align: center;
+	line-height: 70px;	
+}
+nav {
+	position: relative; /*Para cajas externas*/
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+}
+.botones{
+	float: left; /*Flota a nivel horizontal*/
+	width: 30%;
+	height: 50px;
+	text-align: center;
+	color: red;
+	line-height: 40px;	/*Alto de la línea*/
+	background: #F9CBC1;
+	margin-left: 35px;	
+}
+#top{
+	top: 30px;
+	position: relative;
+}
+#top ul li {
+	float: left;
+	width: 30%;
+	height: 200px;
+	margin-left: 35px;
+	text-align: center;
+}
+#top ul li img{
+	height: 200px;
+	margin-left: px; 
+	float: center;
+}

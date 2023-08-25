@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <title>Graficar datos</title>
+</head>
+<body>
+
+<h1>Grafica de barras</h1>
+
+<div id="Grafica"></div>
+
+<!-- 
+	Este scrípt se encarga de usar la API directamente de la página
+		NOTA. -> Sí la dirección cambia, la API ya no se puede utilizar.
+
+		-- ESTE PRIMER SCRIPT SE ECARGA DE SUBIR LAS LIBRERIAS	--
+ -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- 
+	Este segundo script se encarga de mostrar el dinamismo, osea que muestra la gráfica
+-->
+
+<script type="text/javascript">
+// Leer o cargar los gráficos de google
+
+google.charts.load('current', {'packages':['corechart']});
+		/* 'google.chart.load' --> Carga todos los paquetes que son requeridos para usar gráficos. */
+		/* 'load' --> Al cargar la página carga las librerias. */
+		/* 'current' --> Carga la ultima versión de Google charts; un remplazo de 'current' puede ser 'upcoming'. */
+google.charts.setOnLoadCallback(dibujar);
+		/*  Establecemos una devolución de llamada para que se ejecute cuando se carga la API de visualización de Google. */
+		
+// Dibujar la gráfica, almacenar los valores
+function dibujar() {
+  /*  data --> Contiene los datos de la tabla a graficar. */
+  var data =   google.visualization.arrayToDataTable([ 
+    /*  google.visualization --> Carga la API de visualización.*/
+    /*  arratToDataTable --> Esta función auxiliar crea y rellena una DataTablecon una sola llamada. */
+    /* NOTA. En la función dibujar() creamos y rellenamos la tabla de datos, generamos un gráfico y lo dibujamos. */
+    ['Materia', 'Calificacion'],
+    ['Fisica', 9],
+    ['Matematicas', 9],
+    ['Ingles', 8],
+    ['Programacion I', 10],
+    ['Progrmacion Web I', 9.5]
+]);
+
+  // Titutlo y tamaño del grafico - Contiene las opciones de grafico
+  var options = {'title':'Promedios', 'width':700, 'height':600};
+
+  // Insertar el gráfico en el div
+  var chart = new google.visualization.BarChart(document.getElementById('Grafica'));
+  /* BarChart --> Gráficos de barras*/
+  /* En el id='Grafica' se va a pasar la grafica*/
+
+  chart.draw(data, options);
+  /* draw() --> Dibuja el grafico sobre la pagina.
+          Un objeto DataTable(o a DataView) que contiene sus datos, y un objeto de opciones de gráfico opcional.
+  */
+}
+</script>
+
+
+<cite>https://developers.google.com/chart/interactive/docs/quick_start</cite>
+</body>
+</html>

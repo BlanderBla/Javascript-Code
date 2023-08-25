@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CUESTIONARIO.</title>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="test.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/ing.js"></script>
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="js/jspdf.js"></script>
+
+	<script type="text/javascript" src="js/jspdf.plugin.addimage.js"></script>
+
+	<script type="text/javascript" src="js/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.from_html.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<H1>LENGUAJES DE PROGRAMACIÓN</H1>
+		</div>
+		<div id="MenuEncabezado">
+			<ul>
+				<a href="../index.html"><li class="Boton">PRINCIPAL</li></a>
+				<a href="../Blog/Blog.html"><li class="Boton">BLOG</li></a>
+				<a href="../Acerca de nosotros/AboutUs.html"><li class="Boton">NOSOTROS</li></a>
+				<a href="../Contacto/Contacto.html"><li class="Boton">CONTACTO</li></a>
+				<a href="../cuestionario/cuestionario.html"><li class="Boton">CUESTIONARIO</li></a>
+			</ul>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<a href="../Lenguajes de Programación/C.html"><li class="Boton2">C/C++</li></a>
+			<a href="../Lenguajes de Programación/Java.html"><li class="Boton2">JAVA</li></a>
+			<a href="../Lenguajes de Programación/PHP.html"><li class="Boton2">PHP</li></a>
+			<a href="../Lenguajes de Programación/Python.html"><li class="Boton2">PYTHON</li></a>
+			<a href="../Posgrados/posgradoc++.html"><li class="Boton2">POSGRADOS</li></a>
+			<a href="../FAQ/ejemploFAQ.html"><li class="Boton2">FAQ</li></a>
+		</ul>
+	</nav>
+  <article>
+	<h2>EXÁMEN FINAL</h2>
+	
+	<form>
+		<br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">1.- ¿Quien desarrollo c++ ?</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op1" value="10">Dennis M. Ritchie .<br>
+		<input type="radio" name="op1" value="0">Rasmus Lerdof.<br>
+		<input type="radio" name="op1" value="0">James Gosling.<br>
+		<input type="radio" name="op1" value="3">Guido van Rossum.<br>
+		<input type="radio" name="op1" value="0">Ninguno.<br>
+	   </div>
+        
+        <br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">2.-¿Cuales son los objetivos de phyton?</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op2" value="0"> Ofrece interfaces para el acceso.<br>
+		<input type="radio" name="op2" value="0">Nos ofrece el Software a muy bajo costo para uso propio.<br>
+		<input type="radio" name="op2" value="0">Crear, borrar, mover, modificar..cualquier tipo de operación.<br>
+		<input type="radio" name="op2" value="0">Permitir la ejecución de un mismo programa en múltiples sistemas operativos.<br>
+		<input type="radio" name="op2" value="10">Crear y desarrollar video juegos.<br>
+	    </div>
+
+	    <br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">3.-¿En que año se fundó Java?.</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op3" value="10">1991.<br>
+		<input type="radio" name="op3" value="0">1972.<br>
+		<input type="radio" name="op3" value="0">1996.<br>
+		<input type="radio" name="op3" value="0">1998.<br>
+		<input type="radio" name="op3" value="0">1995.<br>
+	    </div>
+
+	    <br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">4.-¿Objetivos de PHP?</p> <br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op4" value="0">Crear, borrar, mover, modificar..cualquier tipo de operación.<br>
+		<input type="radio" name="op4" value="0">Permitir la ejecución de un mismo programa en múltiples sistemas operativos.<br>
+		<input type="radio" name="op4" value="10">Ofrece interfaces para el acceso a la mayoría de las bases de datos comerciales.<br>
+		<input type="radio" name="op4" value="0">Crear y desarrollar video juegos.<br>
+		<input type="radio" name="op4" value="0">El Lenguaje Maquina Usuario.<br>
+	    </div>
+
+	    <br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">5.-Caracteristicas de PHP.</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op5" value="0">Cualquier sistema es compatible con el lenguaje siempre y cuando exista un intérprete programado para él.<br>
+		<input type="radio" name="op5" value="0">Es un programa que nos facilita la vida, ya que hace todo por nosotros.<br>
+		<input type="radio" name="op5" value="0">Lenguaje multiplataforma y seguro.<br>
+		<input type="radio" name="op5" value="10">Es totalmente libre y multiplataforma.<br>
+		<input type="radio" name="op5" value="0">Es un lenguaje simple, flexible.<br>
+     	</div>
+
+		<br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;"> 6.-¿Quién fundo Python?</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">
+		<input type="radio" name="op6" value="3"> James Gosling.<br>
+		<input type="radio" name="op6" value="0">Nose.<br>
+		<input type="radio" name="op6" value="10">Guido van Rossum.<br>
+		<input type="radio" name="op6" value="0">Rasmus Lerdof.<br>
+		<input type="radio" name="op6" value="0">El sector de comunicaciones.<br>
+	    </div>
+
+	    <br><p style="font-family: 'Heebo', sans-serif; color:#0404B4; font-size: 20px;">7.->Cerficación de Java.</p><br>
+		<div style="font-family: 'Yanone Kaffeesatz', sans-serif; color:#151515; font-size: 20px;">	
+		<input type="radio" name="op7" value="0">la Domótica.<br>
+		<input type="radio" name="op7" value="0"> Rogue Wave Zend.<br>
+		<input type="radio" name="op7" value="0">Microsoft.<br>
+		<input type="radio" name="op7" value="0">Cisco.<br>
+		<input type="radio" name="op7" value="10">ORACLE.<br>
+	    </div>
+	</form>
+	<br><input  style="background: #04B404; color:#2E2E2E; margin-left: 500px; height: 70px; width: 120px;" type="submit" value="Enviar" id="Enviar" onclick="capturar()">
+	<input style="background: #04B404; color:#2E2E2E; margin-left: 500px; height: 70px; width: 120px;" type="submit" value="generaPDF" id="Enviar" onclick="generar()">
+	<p id="resultado"></p>
+	<input type="text" id="suma" value="">
+	<iframe frameborder="0" width="100%" height="1000"></iframe>
+</article>
+</body>
+</html>

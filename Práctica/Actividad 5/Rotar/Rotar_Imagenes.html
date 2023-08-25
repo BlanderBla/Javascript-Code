@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rotar imagenes</title>
+	<script type="text/javascript">
+		function timer(){
+			var o=0;
+			setInterval(function(){rotar(); }, 1000);
+
+			function rotar(){
+				var texto="";
+				var imagenes=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+				texto="<img src="+imagenes[o]+">";
+				document.getElementById("rotatorio").innerHTML = texto;
+				if(o>3){
+					o=0;
+				}else{
+					o++;
+				}
+			}
+
+		}
+
+	</script>
+</head>
+<body onload="timer()">
+	<p id="rotatorio"></p>
+</body>
+</html>

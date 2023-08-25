@@ -1,0 +1,22 @@
+*{
+	margin: 10px 10px;
+}
+h2::first-letter{
+	font-size: 40px;
+}
+p::first-child{
+	color: red;
+	background-color: red;	
+}
+a::before{
+	content: "➝ ";
+}
+abbr[title="Hypertext Markup Language"]::after{
+	content: " (HyperText Markup Language) ";
+}
+abbr[title="Cascading Style	Sheets"]::after{
+	content: " (Cascading Style Sheets) ";
+}
+abbr[title="Uniform Resource Locator"]::after{
+	content: " (Uniform Resource Locator) ";
+}

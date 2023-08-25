@@ -1,0 +1,40 @@
+*{
+	margin: 0 auto;
+	list-style: none;
+}
+h1{
+	text-align: center;
+	color: purple;
+}
+div#Planilla{
+	top: 30px;
+	position: relative;
+	width: 1000px;
+	height: 350px;
+	border-color: black;
+
+}
+div#Control{
+	top: 30px;
+	position: relative;
+	width: 500px;
+	height: 150px;
+	background-color: blue;
+	font-size: 20px;
+}
+div#Control ul#TitulosBotones li{
+	line-height: 50px;
+	float: left;
+	margin-left: 65px;
+}
+
+div#Control ul#Botones li{
+	float: left;
+	margin-left: 15px;
+}
+
+input[type="submit"]{
+	width: 120px;
+	height: 50px;
+	font-size: 15px;
+}

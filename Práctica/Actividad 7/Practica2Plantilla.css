@@ -1,0 +1,21 @@
+*{
+	margin: 0 auto;
+	list-style: none;
+}
+header{
+	position: relative;
+	width: 90%;
+	height: 100px;
+	background-color: lightblue;
+	float: center;
+
+	line-height: 100px;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+article{
+	position: relative;
+	width: 90%;
+	padding: 30px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAINT</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="PlantillaActividad4.css">
+	<script type="text/javascript" src="DinamismoActividad4.js"></script>
+</head>
+<body onload="Bienvenido()">
+	<h1>PAINT</h1>
+
+	<div id="Planilla">
+		<canvas id="lienzo"></canvas>
+	</div>
+	
+	<div id="Control">
+		<ul id="Colores">
+			<li><input type="button" name="Rojo" id="Rojo" value="Rojo" onclick="ColorRojo()"></li>
+			<li><input type="button" name="Verde" id="Verde" value="Verde" onclick="ColorVerde()"></li>
+			<li><input type="button" name="Azul" id="Azul" value="Azul" onclick="ColorAzul()"></li>
+		</ul>
+		<br><br>
+		<ul id="Botones">
+			<li><input type="submit" name="PintarTriangulo" id="PintarTriangulo" value="PintarTriangulo" onclick="Triangulo()"></li>
+			<li><input type="submit" name="PintarCuadrado" id="PintarCuadrado" value="PintarCuadrado" onclick="Rectangulo()"></li>
+			<li><input type="submit" name="Borrar" id="Borrar" value="Borrar"></li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

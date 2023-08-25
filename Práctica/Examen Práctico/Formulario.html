@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Examen Práctico</title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		function resultado(){
+			var = contadorSi;
+			var = contadorAVeces;
+			var = contadorRaraVez;
+			var = contadorNo;
+			var = i;
+			var nPreguntas = document.getElementById(formularioRadio.length);
+
+			for(i=0;i<nPreguntas;i++){
+					var valor =  nPreguntas[i].value;
+						if(nPreguntas[i]=="1"){
+							contadorSi++;
+						}
+						else if(nPreguntas[i]=="2"){
+							contadorAVeces++;
+						}
+						else if(nPreguntas[i]=="3"){
+							contadorRaraVez++;
+						}
+						else if(nPreguntas[i]=="4"){
+							contadorNo++;
+						}
+				}
+			}
+			alert("Cuantas veces SI: "+contadorSi);
+			alert("Cuantas veces A VECES: "+contadorAVeces);
+			alert("Cuantas veces RARA VEZ"+contadorRaraVez);
+			alert("Cuantas veces NO"+contadorNo);
+
+		}
+		function Name(){
+			var contrasena = "Matematicas"
+			var formlarioNom = getElementById("Nombre");
+			var nomUsuario = getElementById("NombreUsuario");
+			var num = NombreUsuario.length;
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Test para medir el nivel de riesgo de violencia para mujeres en el estado de San Luis Potosí</h1>
+	<h2>Examen Práctico<br><br>Programación Web I</h2>
+	
+	<label for="Nombre" id="Nombre">Nombre: </label>
+	<input type="text" name="Nombre" placeholder="Ingrese su nombre" id="NombreUsuario">
+	
+	<form id="formularioRadio" id="formularioRadio">
+		<ul>
+			<li>
+			¿Dentro de tu núcleo familiar (padre, madre, hermanos) en algún momento vivieron violencia (amenazas, gritos, golpes)
+			</li>
+				<input type="radio" name="Pregunta1" value="1"> Si<br>
+				<input type="radio" name="Pregunta1" value="2"> A veces<br>
+				<input type="radio" name="Pregunta1" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta1" value="4" > No<br>
+			<li>¿Tu pareja te cela?</li>
+				<input type="radio" name="Pregunta2" value="1"> Si<br>
+				<input type="radio" name="Pregunta2" value="2"> A veces<br>
+				<input type="radio" name="Pregunta2" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta2" value="4"> No<br>
+			<li>¿Has sufrido descalificaciones o humillaciones en público por parte de tu pareja</li>
+				<input type="radio" name="Pregunta3" value="1"> Si<br>
+				<input type="radio" name="Pregunta3" value="2"> A veces<br>
+				<input type="radio" name="Pregunta3" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta3" value="4"> No<br>
+			<li>¿Tu pareja te responsabiliza por los problemas que tienen?</li>	
+				<input type="radio" name="Pregunta4" value="1"> Si<br>
+				<input type="radio" name="Pregunta4" value="2"> A veces<br>
+				<input type="radio" name="Pregunta4" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta4" value="4"> No<br>
+			<li>¿Te controla, todo el tiempo o quiere saber dónde estás?</li>
+				<input type="radio" name="Pregunta5" value="1"> Si<br>
+				<input type="radio" name="Pregunta5" value="2"> A veces<br>
+				<input type="radio" name="Pregunta5" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta5" value="4"> No<br>
+			<li>¿Te chantajea, manipula o soborna para hacer cosas?</li>
+				<input type="radio" name="Pregunta6" value="1"> Si<br>
+				<input type="radio" name="Pregunta6" value="2"> A veces<br>
+				<input type="radio" name="Pregunta6" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta6" value="4"> No<br>
+			<li>¿Te limita o prohibe hacer cosas?</li>
+				<input type="radio" name="Pregunta7" value="1"> Si<br>
+				<input type="radio" name="Pregunta7" value="2"> A veces<br>
+				<input type="radio" name="Pregunta7" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta7" value="4"> No<br>	
+			<li>¿Te controla o limita el recurso económico, o amenaza con quitártelo a ti y a tus hijos?</li>
+				<input type="radio" name="Pregunta8" value="1"> Si<br>
+				<input type="radio" name="Pregunta8" value="2"> A veces<br>
+				<input type="radio" name="Pregunta8" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta8" value="4"> No<br>	
+			<li>¿Durante las discuciones, tu pareja se pone violenta y ha destruido objetos?</li>
+				<input type="radio" name="Pregunta9" value="1"> Si<br>
+				<input type="radio" name="Pregunta9" value="2"> A veces<br>
+				<input type="radio" name="Pregunta9" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta9" value="4"> No<br>
+			<li>¿Tu pareja te obliga a tener relaciones sexuales sin tu consentimiento o sin protección?</li>
+				<input type="radio" name="Pregunta10" value="1"> Si<br>
+				<input type="radio" name="Pregunta10" value="2"> A veces<br>
+				<input type="radio" name="Pregunta10" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta10" value="4"> No<br>
+			<li>¿Tu pareja te acaricia violentamente (besa, muerde, pellizca, abraza)?</li>
+				<input type="radio" name="Pregunta11" value="1"> Si<br>
+				<input type="radio" name="Pregunta11" value="2"> A veces<br>
+				<input type="radio" name="Pregunta11" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta11" value="4"> No<br>
+			<li>¿Cuando discutes con tu pareja, te hace agresiones físicas (empujones, patadas, puñetazos, jalones, te azota alguna arma (blanca o fuego) que te dejan marcas)</li>	
+				<input type="radio" name="Pregunta12" value="1"> Si<br>
+				<input type="radio" name="Pregunta12" value="2"> A veces<br>
+				<input type="radio" name="Pregunta12" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta12" value="4"> No<br>
+			<li>¿Has recibido atención médica y/o psicológica por la violencia ejercida por tu pareja</li>
+				<input type="radio" name="Pregunta13" value="1"> Si<br>
+				<input type="radio" name="Pregunta13" value="2"> A veces<br>
+				<input type="radio" name="Pregunta13" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta13" value="4"> No<br>
+			<li>¿Habías realizado denuncias anteriormente por violencia familiar, acoso laboral y/o sexual o lesiones?</li>
+				<input type="radio" name="Pregunta14" value="1"> Si<br>
+				<input type="radio" name="Pregunta14" value="2"> A veces<br>
+				<input type="radio" name="Pregunta14" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta14" value="4"> No<br>
+			<li>¿Debido a la violencia decidiste separarte o terminar la relación?</li>
+				<input type="radio" name="Pregunta15" value="1"> Si<br>
+				<input type="radio" name="Pregunta15" value="2"> A veces<br>
+				<input type="radio" name="Pregunta15" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta15" value="4"> No<br>	
+			<li>¿Seguiste con el proceso de tu denucia o la retiraste?</li>
+				<input type="radio" name="Pregunta16" value="1"> Si<br>
+				<input type="radio" name="Pregunta16" value="2"> A veces<br>
+				<input type="radio" name="Pregunta16" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta16" value="4"> No<br>
+			<li>¿Por qué motivo retiraste la denuncia?</li>
+				<input type="radio" name="Pregunta17" value="1"> Amor<br>
+				<input type="radio" name="Pregunta17" value="2"> Amenazas<br>
+				<input type="radio" name="Pregunta17" value="3"> Miedo<br>
+				<input type="radio" name="Pregunta17" value="4"> Falta de interés de las autoridades<br>
+			<li>¿Los episodios de violencia son más frecuentes y extremos?</li>
+				<input type="radio" name="Pregunta18" value="1"> Si<br>
+				<input type="radio" name="Pregunta18" value="2"> A veces<br>
+				<input type="radio" name="Pregunta18" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta18" value="4"> No<br>	
+			<li>¿Seguiste con el proceso de tu denuncia o la retiraste?</li>
+				<input type="radio" name="Pregunta19" value="1"> Si<br>
+				<input type="radio" name="Pregunta19" value="2"> A veces<br>
+				<input type="radio" name="Pregunta19" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta19" value="4"> No<br>	
+			<li>¿Por qué motivo retiraste la denuncia?</li>
+				<input type="radio" name="Pregunta20" value="1"> Si<br>
+				<input type="radio" name="Pregunta20" value="2"> A veces<br>
+				<input type="radio" name="Pregunta20" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta20" value="4"> No<br>
+			<li>¿Los episodios de violencia son más frecuentes y extremos?</li>
+				<input type="radio" name="Pregunta21" value="1"> Si<br>
+				<input type="radio" name="Pregunta21" value="2"> A veces<br>
+				<input type="radio" name="Pregunta21" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta21" value="4"> No<br>
+			<li>¿Has recibido hostigamiento constante o amenazas de muerte por parte de tu agresor?</li>
+				<input type="radio" name="Pregunta22" value="1"> Si<br>
+				<input type="radio" name="Pregunta22" value="2"> A veces<br>
+				<input type="radio" name="Pregunta22" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta22" value="4"> No<br>
+			<li>¿Las autoridades emitieron medidas cautelares y de protección para salvaguardar tu integridad (y la de tus hijos)?</li>	
+				<input type="radio" name="Pregunta23" value="1"> Si<br>
+				<input type="radio" name="Pregunta23" value="2"> A veces<br>
+				<input type="radio" name="Pregunta23" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta23" value="4"> No<br>
+			<li>¿Tu agresor ya ha intentado matarte?</li>
+				<input type="radio" name="Pregunta24" value="1"> Si<br>
+				<input type="radio" name="Pregunta24" value="2"> A veces<br>
+				<input type="radio" name="Pregunta24" value="3"> Rara vez<br>
+				<input type="radio" name="Pregunta24" value="4"> No<br><br>
+			<input type="submit" name="Enviar" value="Enviar" onclick="resultado()">		
+		</ul>
+	</form>
+</body>
+</html>

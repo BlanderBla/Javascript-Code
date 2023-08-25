@@ -1,0 +1,35 @@
+*{
+	margin: 0 0;
+	list-style: none;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+.opcion{
+	float: left;
+	width: 24%;
+	height: 50px;
+	background-color: brown;
+	color: #FFFFFF;
+	margin-left: 5px;
+	text-align: center;
+}
+@media screen and (min-width: 0px) and (max-width: 480px){
+	*{
+		margin: 0 0;
+		list-style: none;
+	}
+	nav{
+		position: relative;
+		width: 100%;
+		height: 200px;
+	}
+	.opcion{
+		margin-left: 0px;
+		width: 100%;
+		background-color: green;
+		
+	}	
+}

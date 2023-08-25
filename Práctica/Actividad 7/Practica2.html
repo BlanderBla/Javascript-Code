@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Practica2Plantilla.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<script type="text/javascript" language="javascript" src="Practica2Dinamismo.js"></script>
+</head>
+<body onload="Bienvenido()">
+	<header>Actividad 2 - Generador de RFC</header>
+	<article>
+		<form>
+			<label for="Nom">Nombre:</label>
+			<input type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre" size="80">
+			<br><br>
+			<label for="ApPat">Apellido paterno: </label>
+			<input type="text" name="ApellidoPaterno" id="ApellidoPaterno" placeholder="Ingrese su apellido paterno" size="72">
+			<br><br>
+			<label for="ApMat">Apellido materno: </label>
+			<input type="text" name="ApellidoMaterno" id="ApellidoMaterno" placeholder="Ingrese su apellido materno" size="71">
+			<br><br>
+			Fecha de nacimiento
+			<br><br>
+			<label for="A">Ingrese su año de nacimiento: </label>
+			<input type="text" name="Anio" id="Anio" placeholder="Año" size="6">
+			<br><br>
+			<label for="M">Ingrese su mes de nacimiento: </label>
+			<input type="text" name="Mes" id="Mes" placeholder="Mes" size="4">
+			<br><br>
+			<label for="D">Ingrese su día de nacimiento: </label>
+			<input type="text" name="Dia" id="Dia" placeholder="dia" size="4">
+			<br><br>
+			<input type="submit" name="GeneradorRFC" value="Generador de RFC" onclick="Generador()">
+		</form>
+	</article>
+</body>
+</html>

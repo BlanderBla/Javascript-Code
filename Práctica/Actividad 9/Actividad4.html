@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Actividad 4</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Actividad4.css">
+	<script type="text/javascript" language="javascript" src="Actividad4.js"></script>
+</head>
+<body onload="Inicializar()">
+	<h1>PAINT</h1>
+	
+	<div id="Bloc">
+		<canvas id="lienzo"></canvas>		
+	</div>
+	
+	<div id="TituloColor">
+		Seleccione color
+	</div>
+	
+	<section id="Botones">
+		
+		<ul id="Colores">
+			<li><input type="button" name="Rojo" id="Rojo" value="Rojo" onclick="Rojo()"></li>
+			<li><input type="button" name="Verde" id="Verde" value="Verde" onclick="Verde()"></li>
+			<li><input type="button" name="Azul" id="Azul" value="Azul" onclick="Azul()"></li>
+		</ul>
+		
+		<br>
+		
+		<ul id="Dibujo">
+			<li><input type="button" name="Triangulo" id="Triangulo" value="Pintar Triangulo" onclick="triangulo()"></li>
+			<li><input type="button" name="Cuadrado" id="Cuadrado" value="Pintar Cuadrado" onclick="cuadrado()"></li>
+			<li><input type="button" name="Borrar" id="Borrar" value="Borrar" onclick="borrar()"></li>
+		</ul>
+	</section>
+
+</body>
+</html>

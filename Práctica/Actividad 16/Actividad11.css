@@ -1,0 +1,25 @@
+*{
+	margin: 20px auto;
+}
+
+h1{	
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+}
+input[type="button"]{
+	position: relative;
+	margin-left: 230px;
+	width: 230px;
+	height: 30px;
+}
+
+section#Grafica{
+	position: relative;
+	top: 0;
+	margin-left: 230px;
+	width: 900px;
+	height: 500px;
+
+	background-color: red;
+}

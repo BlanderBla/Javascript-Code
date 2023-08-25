@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rotar imagen</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function changeImg(){
+			var i=0;
+			var texto;
+			for(i=0;i<5;i++){
+				alert(i);
+				texto+="<img src='imagen"+i+".jpg' onload='setTimeout(tiempo, 5000)'>";
+				if(i==4){
+					i=-1;
+				}
+			}
+		}	
+		function tiempo(n){
+			var time;
+			for(time=0;time<5;time++){
+				if(time==4){
+					time=-1;
+				}
+			}
+		}
+	</script>
+</head>
+<body onload="setTimeout(changeImg, 5000);">
+	<h1 style="background-color: black; color: white; text-align: center;">Rotacion de Imagen</h1>
+	<div id="Imagen">
+		Aqui va a ir la imagen
+	</div>
+</body>
+</html>

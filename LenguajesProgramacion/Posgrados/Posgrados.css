@@ -1,0 +1,153 @@
+*{ 
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+}
+
+h2{
+font-family: 'Nunito', sans-serif
+}
+header{
+	position: relative; /*Cajas externas*/
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+#logo{
+	position: absolute; /*Cajas internas*/
+	width: 500px; 
+	height: 50px; 
+	margin-left: 50px;
+	text-align: left;
+	background-color: #ccc;
+	line-height: 50px;	/*Margen inferior*/
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	background-color: black;
+}
+#MenuEncabezado{
+position: relative;
+	margin-left: 750px;
+	width: 450px;
+	height: 50px;
+}
+.Boton{
+	list-style: none;
+
+	float: left;
+	width: 100px;
+	height: 50px;
+	margin-left: 8px;
+
+	line-height: 50px;
+	text-align: center;
+	color: white;
+}
+nav{
+	position: relative; /*Para cajas externas*/
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	top: 10px;
+	background-color: white;
+}
+.Boton2{
+	list-style: none;
+
+	float: left; /*Flota a nivel horizontal*/
+	width: 16%;
+	height: 50px;
+	margin-left: 8px;
+	
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 40px;	/*Espaciado entre lineas*/
+
+	color: black;
+	background-color: white;
+}
+
+body{
+	background-image: url(imagenes/posgrados.jpg);
+	background-attachment: fixed;
+	background-position: relative;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: 'Montserrat', sans-serif;
+
+}
+article{
+	position: relative;
+	margin: 0 45px 0 45px;
+	height: 400px;
+	top:30px;
+}
+section#Q{
+	position: absolute;
+	padding: 10px;
+	width: 100%;
+	height: 500px;
+    background-color: rgba(251, 252,252, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+div#posgrados ul{
+	width: 100%;
+	height: 500px;
+	font-family: 'Montserrat', sans-serif;
+}
+div#posgrados ul li{
+	float: left;
+
+	width: 30%;
+	height: 192px;
+	margin-left: 45px;
+
+	text-align: justify;
+	font-family: 'Montserrat', sans-serif;
+}
+div#posgrados ul li img{
+	height: 100px;
+	align-content: center;
+	margin-left: 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+div#posgrados ul li{
+	float: left;
+	padding: 20px;
+	width: 16%;
+	height: 450px;
+	margin-left: : 25px;
+    font-family: 'Montserrat', sans-serif;
+	text-align:justify;
+	background-color: rgba(44, 44, 44, 0.3);
+}	
+footer{
+	top: 150px;
+	position: relative;
+
+	width: 100%;
+	height: 100px;
+
+	background-color: black;
+	color: #FFFFFF;
+	margin-left: 0px;
+}
+footer div#UPSLP{
+	position: absolute;
+
+	height: 90px;
+	margin-left: 30%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+
+}
+footer div#Datos{
+	position: absolute;
+
+	height: 90px;
+	margin-left: 70%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+
+}

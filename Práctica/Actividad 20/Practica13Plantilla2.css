@@ -1,0 +1,47 @@
+*{
+	margin: 0 auto;
+}
+table{
+	float: left;
+	margin-left: 10px;
+	border: solid 2px;
+}
+th {
+	text-align: center;
+	background-color: gainsboro;
+}
+th.euro{
+	background-color: lightcyan;
+}
+	th.euro::before{
+		content: "€ ";
+		color: yellow;
+	}
+th.dolar{
+	background-color: lightcyan;
+
+}	1
+	th.dolar::before{
+		content: "$ ";
+		color: green;
+	}
+th.libra{
+	background-color: lightcyan;
+}
+	th.libra::before{
+		content: " £ ";
+		color: blue;
+	}
+th.yen{
+	background-color: lightcyan;	
+}
+	th.yen::before{
+		content: "¥ ";
+		color: green;
+	}
+td {
+	text-align: right;
+}
+td:hover{
+	background-color: #FFFF66;
+}

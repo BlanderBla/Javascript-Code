@@ -1,0 +1,27 @@
+* {
+	margin: 0 auto;
+	list-style: none;
+}
+header {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	background-color: lightblue;
+	text-align: center;
+	line-height: 100px;
+}
+
+#Tabla{
+	top: 40px;
+	position: relative;
+	margin: 0px 50px 0px 50px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	background-color: lightblue;
+	/*SOMBRA DE LA CAJA*/
+	-moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow:
+	rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 15px 15px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function for_in(){
+			var dias=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+			for(i in dias){
+				alert(dias[i]);
+			}
+		}
+		function longitud(){
+			var cadena;
+			var numCadena;
+			cadena = prompt('Ingrese la cadena: ','');
+			numCadena = cadena.length;
+			document.write('El numero de caracteres son: '+ numCadena);
+		}
+		function concatenar(){
+			var cadena1;
+			var cadena2;
+			var unir;
+			cadena1 = prompt('Ingrese la cadena 1:','');
+			cadena2 = prompt('Ingrese la cadena 2:','');
+			unir = cadena1.concat(cadena2);
+			document.write('La concatenación es: '+unir);
+		}
+		function mayusculas(){
+			var cadena; 
+			var cadMayus;
+			cadena = prompt('Ingrese la cadena: ','');
+			cadMayus = cadena.toUpperCase();
+			document.write('La cadena en mayusculas es: '+cadMayus);
+		}
+		function minusculas(){
+			var cadena;
+			var cadMinus;
+			cadena = prompt('Ingrese la cadena: ','');
+			cadMinus = toLowerCase()
+			document.write('La cadena en misculas es: '+cadMinus);
+		}
+		function caracter(){ /*NO SALES*/
+			var cadena;
+			var caracter;
+			cadena = prompt('Ingrese la cadena: ','');
+			caracter = prompt('Ingrese el caracter a buscar','');
+		}
+		function deletrear (){
+			var cadena;
+			var longCad;
+			var i;
+			cadena = prompt('Ingrese la cadena: ','');
+			longCad = cadena.lenght;
+			for(i;i<longCad;i++){
+				document.write(cadena[i]);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<label name="Nombre" >Utilizar arreglos</label>
+	<input type="button" value="Ejemplo for in" name="for" onclick="for_in()">
+	<br><br>
+	<label name="Longitud">Muestra la longitud de un texto</label>
+	<input type="button" name="Longitud" value="Longitud" onclick="longitud()">
+	<br><br>
+	<label name="Concatenar">Concatenar dos cadenas</label>
+	<input type="button" name="Concatenar" value="Concatenar" onclick="concatenar()">
+	<br><br>
+	<label name="Mayusculas">Convierte cadena a mayusculas</label>
+	<input type="button" name="Mayusculas" value="Mayusculas" onclick="mayusculas()">
+	<br><br>
+	<label name="Minusculas">Convierte cadena a mayusculas</label>
+	<input type="button" name="Minusculas" value="Minusculas" onclick="minusculas()">
+	<br><br>
+	<label name="Caracter">Convierte cadena a mayusculas</label>
+	<input type="button" name="Caracter" value="Caracter" onclick="caracter()">
+	<br><br>
+	<label name="Deletreo">Convierte cadena a mayusculas</label>
+	<input type="button" name="Deletreo" value="Deletrear" onclick="deletrear()">
+</body>
+</html>

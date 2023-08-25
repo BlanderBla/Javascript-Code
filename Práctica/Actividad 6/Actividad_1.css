@@ -1,0 +1,35 @@
+*{
+	margin: 0 auto;
+}
+header{
+	top: 30px;
+	position: relative;
+	width: 90%;
+	height: 80px;
+
+	line-height: 80px;
+	text-align: center;
+	font-size: 35px;
+	background-color: lightseagreen;
+}
+article{
+	top: 30px;
+	position: relative;
+	width: 90%;
+	height: 80px;
+	padding: 30px 60px 30px 60px;
+}
+article div{
+	text-align: center;
+	font-size: 24px;
+}
+label#lCad{
+	font-size: 20px;
+}
+input[type="text"]{
+	height: 33px;
+}
+input[type="submit"]{
+	width: 100px;
+	height: 40px;
+}

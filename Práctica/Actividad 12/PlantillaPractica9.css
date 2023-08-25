@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	list-style: none;
+}
+div p{
+	width: 500px;
+	height: 100px;
+	background-color: purple;
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+div p:hover{
+	width: 500px;
+	height: 100px;
+	background-color: #F1BE1C;
+	
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+
+	-moz-transform:
+	skew(20deg);
+	-webkit-transform:
+	skew(20deg);
+	transform: skew(20deg);
+
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}
+
+div p:active{
+	width: 500px;
+	height: 100px;
+	background-color: #A2F053;
+	/*Color del borde*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	/*Angulo de inclinación*/
+	-moz-transform:
+	skew(20deg);
+	-webkit-transform:
+	skew(20deg);
+	transform: skew(20deg);
+	/*Sombra del botón*/
+	-moz-box-shadow:
+	rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow:
+	rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px;
+	
+	/*Texto*/
+	color: white;
+	text-align: center;
+	line-height: 100px;
+	font-size: 35px;
+}

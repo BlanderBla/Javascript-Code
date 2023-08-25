@@ -1,0 +1,21 @@
+*{ margin: 0; padding: 0;list-style: none; } /¨Propiedades para el selector universal.*/
+#header{ 
+	position: relative; 
+	margin: 20px auto; 
+	width: 1000px; 
+	height: 120px; 
+	background: #444; }
+#logo{ 
+	position: asolute; 
+	top: 30px;
+	left: 30px; 
+	width: 200px; 
+	height: 66px; 
+	background-color: #ccc}
+#redes{
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	background-color: #CCC;
+	border-radius: 100%
+}

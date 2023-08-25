@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<script type="text/javascript">
+		function Iniciar(){
+			Usuario = "brayangalvan";
+			Password = "galvan000627";
+			Nombre = document.formulario.Name.value
+			Contrasena = document.formulario.Pass.value
+				if(Usuario == Nombre && Password == Contrasena){
+					alert("Bienvenido " + Usuario);
+					location.href ="http://www.upslp.edu.mx/upslp/";
+				}else{
+					alert("Usuario o contraseña incorrecta");
+				}
+		}
+	</script>
+</head>
+<body>
+	<form action="" name="formulario"> 
+	Nombre del usuario: <input type="text" name="Name" size="20"> 
+	<br> 
+	Contraseña: <input type="Password" name="Pass" size="20"> 
+	<br> 
+	<input type="button" value="Comprobar si son iguales" onClick="Iniciar()">
+</body>
+</html>

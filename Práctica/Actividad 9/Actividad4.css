@@ -1,0 +1,58 @@
+*{
+	margin: 0 auto;
+	list-style: none;
+}
+h1{
+	text-align: center;
+	color: purple;
+}
+div#Bloc{
+	position: relative;
+	height: 350px;
+	width: 800px;
+}
+div#TituloColor{
+	position: relative;
+	height: 50px;
+	width: 800px;
+	text-align: center;
+	font-size: 30px;
+	color: blue;
+}
+section#Botones{
+	position: relative;
+	height: 100px;
+	width: 600px;
+	text-align: center;
+}
+
+section#Botones ul#Colores{
+	position: absolute;
+	margin-left: 70px;
+
+	width: 400px;
+	height: 50px;
+}
+
+section#Botones ul#Colores li{
+	float: left;
+	margin-left: 10px;
+}
+
+section#Botones ul#Dibujo{
+	top: 50px;
+	position: absolute;
+	margin-left: 70px;
+	width: 400px;
+	height: 50px;
+}
+
+section#Botones ul#Dibujo li{
+	float: left;
+	margin-left: 10px;
+}
+
+input[type="button"]{
+	width: 120px;
+	height: 40px;
+}

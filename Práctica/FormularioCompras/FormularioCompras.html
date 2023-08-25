@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario Compras</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Registro de compras</h1>
+	<form>
+		<fieldset>
+			<legend>Datos del cliente</legend>
+			<br>
+			<label for="Nombre">Nombre: </label>
+			<input type="text" name="Nombre" id="Nombre" required="true" placeholder="Nombre">
+			<br>
+			<label for="ApellidoPaterno">Apellido paterno: </label>
+			<input type="text" name="ApellidoPaterno" id="ApellidoPaterno" required="true" placeholder="ApellidoPaterno">
+			<br>
+			<label for="ApellidoMaterno">Apellido materno: </label>
+			<input type="text" name="ApellidoMaterno" id="ApellidoMaterno" required="true" placeholder="ApellidoMaterno">
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos de la compra</legend>
+			<h2>Selecciona el tipo de servicio a contratar</h2>	
+			<label for="servicio">Teléfono </label>
+			<input type="checkbox" name="servicio" id="servicio">
+			<br>
+			<label for="servicio">Internet </label>
+			<input type="checkbox" name="servicio" id="servicio" checked="true" >
+			<br>
+			<label for="servicio">Televisión </label>
+			<input type="checkbox" name="servicio" id="servicio">
+		</fieldset>
+		<fieldset>
+			<legend>Datos de la forma de pago</legend>
+			<h2>Selecciona la forma de pago</h2>
+			<label for="pago">Tarjeta de Crédito </label>
+			<input type="radio" name="pago" id="pago" checked="true">
+			<br>
+			<label for="pago">Efectivo </label>
+			<input type="radio" name="pago" id="pago">
+			<br>
+			<label for="pago">Cheque </label>
+			<input type="radio" name="pago" id="pago">
+			<br>
+			<label for="pago">Transferencía Deposito bancario </label>
+			<input type="radio" name="pago" id="pago">
+		</fieldset>
+		<br>
+		<input type="submit" name="Enviar" id="Borrar" value="Enviar">
+		<input type="reset" name="Borrar" id="Borrar" value="Borrar">
+	</form>
+	
+</body>
+</html>

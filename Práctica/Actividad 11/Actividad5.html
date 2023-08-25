@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Práctica 6 - Unidad 3</title>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="Actividad5.css">
+	<script type="text/javascript" src="Actividad5.js"></script>
+</head>
+<body>
+	<h1>CONVERTIDOR</h1>
+	<br>
+	<ul>
+		<li>Ingresamos el valor a convertir</li>
+		<li>Seleccionamos la unidad a cambiar</li>
+	</ul>
+	<br><br>
+	<form name="Formulario"> <!--CAMBIO... Aquí le agregué la etiqueta form con el name "Formulario" document.forms["Formulario"]["..."]-->
+		<select id="Longitud">
+			<option id="Longitud">Longitud</option>
+		</select>
+		<br><br>
+		-- Ingrese valor a convertir: <br>
+		<input type="text" name="Metro" id="NumMetro"> <!--Usas el name "Metro" document.forms["..."]["Metro"]-->
+		<br><br>
+		De: 
+		<select id="PrimeraOpcion"> 
+				<option>Metro</option>
+		</select>
+		A:
+		<select id="SegundaOpcion" onchange="Decision()">
+			<option id="0" id="0" value="0"></option>
+			<option id="1" value="1">Kilómetro</option>
+			<option id="2" value="2">Metro</option>
+			<option id="3" value="3">Centímetro</option>
+			<option id="4" value="4">Milímetro</option>
+		</select>
+	</form>
+	<br>
+	<div id="Resultado"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta charset="utf-8">
+</head>
+<body bgcolor="#E6E6E6">
+	<H1><center>CENTRO DE IDIOMAS</center></H1>
+	<br><br>
+	Se le solicita completar el formulario como pre-registro para continuar con el proceso de registro
+	<br><br>
+
+	<form>
+		<fieldset title="Registro">
+			<h2>REGISTRO DE USUARIO</h2>
+			<label for="nombre">Nombre del estudiante: </label>		<!--TEXTO -->
+			<input type="text" name="nombre" placeholder="Nombre del estudiante" required="true">
+			<br><br>
+			<label for="usuario">Nombre del usuario: </label> 		<!-- TEXTO -->
+			<input type="text" name="usuario" placeholder="Usuario" required="true">
+			<br><br>
+			<label for="contraseña">Contraseña</label>				<!-- PASSWORD -->
+			<input type="password" name="contraseña" placeholder="Constraseña" required="true">
+			<br><br>
+			<label for="Correo">Ingrese correo electrónico: </label><!-- EMAIL -->
+			<input type="email" name="Correo" placeholder="Correo electronico" required="true">
+			<br><br>
+			<label for="nacimiento">Fecha de nacimiento</label>		<!-- DATE --> 
+			<input type="date" name="nacimiento" required="true">
+			<br><br>
+			<label for="Genero">Sexo: </label>						<!-- RADIO -->
+				<br>
+				<label for="Hombre">Hombre</label>
+				<input type="radio" name="Genero" value="Hombre">
+				<label for="Mujer">Mujer</label>
+				<input type="radio" name="Mujer" value="Mujer">
+			<br><br>
+			<label for="Telefono">Teléfono</label>					<!-- TEL -->
+			<input type="tel" name="Telefono" placeholder="000-000-0000">
+			<br><br>
+				<label for="Imagen">Inserte una imagen de perfil: </label><!-- FILE -->
+				<input type="file" name="Imagen">	
+			<br><br>
+			
+			<input type="submit" name="botonE" value="Enviar">
+			<input type="reset" name="botonB" value="Borrar">
+		</fieldset>		
+	</form> 
+
+
+</body>
+</html>
